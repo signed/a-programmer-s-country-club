@@ -1,0 +1,31 @@
+allprojects {
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    group = 'com.github.signed.countryclub.drivingrange'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = 1.7
+
+    dependencies {
+        testCompile([
+                'junit:junit:4.11'
+                , 'com.github.signed.junit:junit-extras:0.0.1'
+        ])
+    }
+}
+
+defaultTasks 'build'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}
