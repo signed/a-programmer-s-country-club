@@ -2,3 +2,6 @@ rootProject.name = 'driving-range'
 
 include 'hiddendirectory:00.tee'
 include 'hiddendirectory:01.hole'
+
+include 'copy-project:00.tee'
+include 'copy-project:01.hole'
