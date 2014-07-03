@@ -5,3 +5,6 @@ include 'hiddendirectory:01.hole'
 
 include 'copy-project:00.tee'
 include 'copy-project:01.hole'
+
+include 'all-about-the-result:00.tee'
+include 'all-about-the-result:01.hole'

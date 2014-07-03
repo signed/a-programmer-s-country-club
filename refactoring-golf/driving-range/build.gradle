@@ -1,7 +1,6 @@
 allprojects {
     apply plugin: 'eclipse'
     apply plugin: 'idea'
-
 }
 
 subprojects {
@@ -27,5 +26,5 @@ subprojects {
 defaultTasks 'build'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.6'
+    gradleVersion = '1.12'
 }
